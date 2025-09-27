@@ -1,3 +1,11 @@
+body {
+    border: 2px solid black;
+}
+
+label {
+    border: 2px solid black;
+}
+
 form {
     border: 2px solid black;
     padding: 50px;
@@ -5,8 +13,10 @@ form {
 
 section {
     text-align: center;
+    margin: 5px;
 }
 
 h1 {
     text-align: center;
+    border: 2px solid black;
 }

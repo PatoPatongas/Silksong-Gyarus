@@ -19,7 +19,8 @@
             <form>
 
                 <div class="paises">
-                    <select>
+                    <label for="p-origen">Pais de origen</label>
+                    <select id="p-origen">
                         <optgroup label="América">
                             <option>Antigua y Barbuda</option>
                             <option>Argentina</option>
@@ -161,15 +162,10 @@
                         </optgroup>
                     </select>
 
-                    <input 
-                        type="text" 
-                        inputmode="decimal" 
-                        pattern="^\d+(\.\d{1,2})?$"
-                        placeholder="Ingrese la moneda"  
-                        required
-                    >
+                    <input type="number" step="0.01" placeholder="Ingrese la moneda" required>
 
-                    <select>
+                    <label for="p-cambio"> Pais de cambio</label>
+                    <select id="p-cambio">
                         <optgroup label="América">
                             <option>Antigua y Barbuda</option>
                             <option>Argentina</option>
@@ -313,7 +309,7 @@
                 </div>
 
                 <div class="calcular">
-                    <button>Calcular</button>
+                    <button type="submit">Calcular</button>
                 </div>
 
             </form>
@@ -323,7 +319,7 @@
 
     <!-- SECCION DEL RESULTADO -->
     <section>
-        <input type="text" placeholder="Resultado"  readonly>
+        <p id="resultado">Resultado</p>
     </section>
 
 </body>
