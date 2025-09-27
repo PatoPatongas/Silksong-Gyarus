@@ -1,10 +1,9 @@
 form {
     border: 2px solid black;
-    margin-inline: 500px;
     padding: 50px;
 }
 
-div {
+section {
     text-align: center;
 }
 

@@ -11,11 +11,13 @@
 
 <body>
     <h1>Titulito</h1>
+
     <!-- SECCION DE CAMBIO DE MONEDA -->
     <section>
 
         <div class="form-container">
             <form>
+
                 <div class="paises">
                     <select>
                         <optgroup label="América">
@@ -159,7 +161,13 @@
                         </optgroup>
                     </select>
 
-                    <input type="text" placeholder="Ingrese la moneda" />
+                    <input 
+                        type="text" 
+                        inputmode="decimal" 
+                        pattern="^\d+(\.\d{1,2})?$"
+                        placeholder="Ingrese la moneda"  
+                        required
+                    >
 
                     <select>
                         <optgroup label="América">
@@ -307,9 +315,15 @@
                 <div class="calcular">
                     <button>Calcular</button>
                 </div>
+
             </form>
         </div>
 
+    </section>
+
+    <!-- SECCION DEL RESULTADO -->
+    <section>
+        <input type="text" placeholder="Resultado"  readonly>
     </section>
 
 </body>
