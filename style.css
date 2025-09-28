@@ -1,28 +1,34 @@
 body {
     border: 2px solid black;
+    background-color: aqua
 }
 
 label {
     border: 2px solid black;
+    background-color: aquamarine;
 }
 
 form {
     border: 2px solid black;
     padding: 50px;
+    background-color: blueviolet;
 }
 
 section {
     text-align: center;
     margin: 5px;
+    background-color: crimson;
 }
 
 h1 {
     text-align: center;
     border: 2px solid black;
+    background-color: pink;
 }
 
 p {
     border: 2px solid black;
+    background-color: greenyellow;
 }
 
 .imagenes {
@@ -31,5 +37,6 @@ p {
     display: flex; /* Pone los contenedores en la misma linea */
     justify-content: space-between; /* Coloca todo el espacio posible entre ambas imagenes */
     align-items: center;
+    background-color: chocolate;
 }
 
