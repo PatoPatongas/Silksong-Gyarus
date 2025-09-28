@@ -8,11 +8,6 @@ body {
     
 }
 
-label {
-    border: 2px solid black;
-    background-color: aquamarine;
-}
-
 form {
     border: 2px solid black;
     padding: 50px;
@@ -39,9 +34,19 @@ p {
 .imagenes {
     border: 2px solid black;
     padding: 20px;
-    display: flex; /* Pone los contenedores en la misma linea */
+    display: inline-flex; /* Pone los contenedores en la misma linea */
     justify-content: space-between; /* Coloca todo el espacio posible entre ambas imagenes */
     align-items: center;
     background-color: chocolate;
+}
+
+img#bandera-izq {
+    max-width: 150px;
+    height: auto;
+}
+
+img#bandera-der {
+    max-width: 150px;
+    height: auto;
 }
 
