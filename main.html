@@ -15,8 +15,9 @@
     <section style="display: inline-flex" class="imagenes">
       <div>
         <img
-          src="https://imgs.search.brave.com/oAp7lpccmVvajoj3fZyOKO1pNLEDiT7iLNvXlZxVdjI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2UwL0JhbmRlcmFf/ZGVfTSVDMyVBOXhp/Y29fKDE4ODAtMTg5/MykucG5n"
-          alt="img-1"
+          id="bandera-izq"
+          src="https://www.banderas-mundo.es/data/flags/h160/ag.webp"
+          alt="bandera-izq"
           style="width: 150px; height: auto"
         />
       </div>
@@ -25,10 +26,10 @@
         <div class="form-container">
           <form>
             <div class="paises">
-              <select>
+              <select id="select-izq">
                 <optgroup label="América">
-                  <option>Antigua y Barbuda</option>
-                  <option>Argentina</option>
+                  <option value="antybarb">Antigua y Barbuda</option>
+                  <option value="ar">Argentina</option>
                   <option>Bahamas</option>
                   <option>Barbados</option>
                   <option>Belice</option>
@@ -174,10 +175,10 @@
                 required
               />
 
-              <select>
+              <select id="select-der">
                 <optgroup label="América">
-                  <option>Antigua y Barbuda</option>
-                  <option>Argentina</option>
+                  <option value="antybarb">Antigua y Barbuda</option>
+                  <option value="ar">Argentina</option>
                   <option>Bahamas</option>
                   <option>Barbados</option>
                   <option>Belice</option>
@@ -331,11 +332,13 @@
 
       <div>
         <img
-          src="https://imgs.search.brave.com/oAp7lpccmVvajoj3fZyOKO1pNLEDiT7iLNvXlZxVdjI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2UwL0JhbmRlcmFf/ZGVfTSVDMyVBOXhp/Y29fKDE4ODAtMTg5/MykucG5n"
-          alt="img-2"
+          id="bandera-der"
+          src="https://www.banderas-mundo.es/data/flags/h160/ag.webp"
+          alt="bandera-izq"
           style="width: 150px; height: auto"
         />
       </div>
     </section>
+    <script src="codigo.js"></script>
   </body>
 </html>
