@@ -2,6 +2,7 @@
 const banderas = {
   antybarb: "https://www.banderas-mundo.es/data/flags/h160/ag.webp",
   ar: "https://flagcdn.com/w320/ar.png",
+  mex: "https://flagcdn.com/w320/mx.png",
 };
 
 // Referencias a selects e imágenes
