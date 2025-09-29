@@ -1,5 +1,6 @@
 // Relación de país -> bandera (puedes ir agregando más)
 const banderas = {
+  tonoto: "https://imgs.search.brave.com/R26FDVFLl62qiPqEiQ-ZSqddOrZdJINx6wH2D4i8_BM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2JhL2Ey/LzNjL2JhYTIzY2Nm/YjkwMzg2MmFmMGVi/NTRhNzJmNzEzMDRm/LmpwZw",
   antybarb: "https://www.banderas-mundo.es/data/flags/h160/ag.webp",
   ar: "https://flagcdn.com/w320/ar.png",
   bah: "https://flagcdn.com/w320/bs.png",
@@ -146,4 +147,9 @@ selectIzq.addEventListener("change", () => {
 selectDer.addEventListener("change", () => {
   const pais = selectDer.value;
   imgDer.src = banderas[pais];
+});
+// Inicializar las imágenes al cargar la página
+window.addEventListener("DOMContentLoaded", () => {
+  imgIzq.src = banderas[selectIzq.value];
+  imgDer.src = banderas[selectDer.value];
 });
