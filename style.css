@@ -1,3 +1,58 @@
+/* ESTILOS INDEX */
+
+#body-index {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* Pasar de un color a otro con degradado */
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    display: flex;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    border: 5px solid black;
+}
+
+#container-index {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 5px solid black;    
+}
+
+#h1-index {
+    font-size: 3em;
+    border: 5px solid black;
+    background-color: gray;
+}
+
+#p-index {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    border: 5px solid black;
+    background-color: gray;
+}
+
+#button-index {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcc00;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    border: 4px solid black;
+    margin: 10px 60px;
+}
+
+#button-index:hover {
+    background-color: #d0510d;
+    transform: scale(1.04);  
+}
+
+
 body {
     border: 2px solid black;
     background-color: aqua;
