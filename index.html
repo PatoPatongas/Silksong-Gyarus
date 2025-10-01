@@ -1,28 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bienvenida</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bienvenida</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff0000, #000000);
+            height: 100vh;
+            justify-content: center;
+        }
 
-  <link rel="stylesheet" href="style.css">
+        .selector {
+            border: 2px solid black;
+            align-items: center;
+            text-align: center;
+            margin: 40px 150px 0 150px;
+            padding: 5px;
+            background: white;
+            box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            padding: 5px 35px;
+            margin: 0 10px;
+            background: rgb(255, 238, 0);
+            cursor: pointer;
+        }
+
+        .container {
+            background-color: rgba(177, 58, 58, 0.5);
+            padding: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border: 3px solid black;
+        }
+
+        section {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
 </head>
 
-<body id="body-index">
-  <div class="container-index">
-    <h1>¡Bienvenido al Cambio de Divisas!</h1>
+<body>
+    
+    <h1 style="text-align: center; color: #000000; text-shadow: 2px 1px 1px white; font-size: 42px;">continentes disponibles</h1>
 
-    <p>Convierte tus monedas de forma rápida y sencilla.</p>
+    <div class="selector">
+        <h2 style="color: black;">seleccione uno para mas informacion</h2>
+        <button onclick="location.href='paises.html'">America</button>
+        <button onclick="location.href='#'">Asia</button>
+        <button onclick="location.href='#'">Europa</button>
+    </div>
 
-    <button onclick="location.href='main.html'">
-      Ir a la página de cambio
-    </button>
-
-    <button onclick="location.href='continentes.html'">
-      continentes incluidos
-    </button>
-  </div>
+    <section>
+        <div class="container">
+            <h1>¡Bienvenido al Cambio de Divisas!</h1>
+            <p>Convierte tus monedas de forma rápida y sencilla.</p>
+            <button onclick="location.href='main.html'">
+                Ir a la página de cambio
+            </button>
+    </section>
 </body>
 
 </html>
