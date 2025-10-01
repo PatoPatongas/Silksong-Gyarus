@@ -1,5 +1,4 @@
 /* ESTILOS INDEX */
-
 #body-index {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,33 +7,35 @@
     background: linear-gradient(to bottom, #4facfe, #00f2fe);
     display: flex;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-align: center;
     border: 5px solid black;
 }
 
-#container-index {
+#body-index .container-index {
     background-color: rgba(0, 0, 0, .5);
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border: 5px solid black;    
+    border: 5px solid black;
 }
 
-#h1-index {
+#body-index h1 {
     font-size: 3em;
     border: 5px solid black;
     background-color: gray;
 }
 
-#p-index {
+#body-index p {
     font-size: 1.2em;
     margin-bottom: 40px;
     border: 5px solid black;
     background-color: gray;
 }
 
-#button-index {
+#body-index .container-index button {
     padding: 15px 30px;
     font-size: 1.2em;
     border: none;
@@ -47,75 +48,96 @@
     margin: 10px 60px;
 }
 
-#button-index:hover {
+#body-index .container-index button:hover {
     background-color: #d0510d;
-    transform: scale(1.04);  
+    transform: scale(1.04);
 }
 
-
-body {
-    border: 2px solid black;
+/* ESTILOS MAIN */
+#body-main {
+    margin: 0;
+    border: 5px solid black;
     background-color: aqua;
+    height: 98.7vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Comic Sans MS';
     flex-direction: column;
-    
 }
 
-form {
-    border: 2px solid black;
-    padding: 50px;
+#body-main form {
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 55px;
     background-color: blueviolet;
 }
 
-section {
-    text-align: center;
-    margin: 5px;
-    background-color: crimson;
+#body-main select, input {
+    padding: 2px;
+    border: 5px solid black;
+    border-radius: 5px;
 }
 
-h1 {
+#body-main section {
     text-align: center;
-    border: 2px solid black;
+    border-radius: 15px;
+    margin: 50px;
+}
+
+#body-main h1 {
+    text-align: center;
+    border: 5px solid black;
+    padding: 10px;
+    margin: -10px;
     background-color: pink;
 }
 
-p {
-    border: 2px solid black;
+#body-main p {
+    border: 5px solid black;
+    padding: 5px;
     background-color: greenyellow;
 }
 
-.imagenes {
-    border: 2px solid black;
-    padding: 20px;
-    display: inline-flex; /* Pone los contenedores en la misma linea */
-    justify-content: space-between; /* Coloca todo el espacio posible entre ambas imagenes */
+#body-main button {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: -40px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#body-main .imagenes {
+    display: inline-flex;
+    /* Pone los contenedores en la misma linea */
+    justify-content: space-between;
+    /* Coloca todo el espacio posible entre ambas imagenes */
     align-items: center;
-    background-color: chocolate;
+    border: 5px solid black;
+    background-color: crimson;
 }
 
-img#bandera-izq {
+#body-main img#bandera-izq {
     max-width: 150px;
     height: auto;
 }
 
-img#bandera-der {
+#body-main img#bandera-der {
     max-width: 150px;
     height: auto;
 }
 
-.img-texto {
+#body-main .img-texto {
     display: flex;
-    flex-direction: column; /* Imagen arriba, texto abajo */
-    align-items: center;    /* Centra ambos horizontalmente */
-    margin: 10px;
+    /* Imagen arriba, texto abajo */
+    flex-direction: column;
+    /* Centra ambos horizontalmente */
+    align-items: center;
+    margin: 15px;
 }
 
-.texto-imagen {
+#body-main.texto-imagen {
     margin-top: 8px;
     font-size: 14px;
     color: black;
-    background: none; /* si no quieres el verde del p */
-    border: none;     /* si no quieres el borde negro */
 }
