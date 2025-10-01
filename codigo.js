@@ -1,11 +1,12 @@
 // Relación de país -> bandera (puedes ir agregando más)
 const banderas = {
-  tonoto: "https://imgs.search.brave.com/R26FDVFLl62qiPqEiQ-ZSqddOrZdJINx6wH2D4i8_BM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2JhL2Ey/LzNjL2JhYTIzY2Nm/YjkwMzg2MmFmMGVi/NTRhNzJmNzEzMDRm/LmpwZw",
+  tonoto:
+    "https://imgs.search.brave.com/R26FDVFLl62qiPqEiQ-ZSqddOrZdJINx6wH2D4i8_BM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2JhL2Ey/LzNjL2JhYTIzY2Nm/YjkwMzg2MmFmMGVi/NTRhNzJmNzEzMDRm/LmpwZw",
   antybarb: "https://www.banderas-mundo.es/data/flags/h160/ag.webp",
   ar: "https://flagcdn.com/w320/ar.png",
   bah: "https://flagcdn.com/w320/bs.png",
   brb: "https://flagcdn.com/w320/bb.png",
-  bel:"https://www.banderas-mundo.es/data/flags/h80/bz.webp",
+  bel: "https://www.banderas-mundo.es/data/flags/h80/bz.webp",
   bol: "https://flagcdn.com/w320/bo.png",
   bra: "https://flagcdn.com/w320/br.png",
   can: "https://flagcdn.com/w320/ca.png",
@@ -16,7 +17,7 @@ const banderas = {
   dom: "https://flagcdn.com/w320/do.png",
   ecu: "https://flagcdn.com/w320/ec.png",
   elsa: "https://flagcdn.com/w320/sv.png",
-  eu:"https://www.banderas-mundo.es/data/flags/h80/us.webp",
+  eu: "https://www.banderas-mundo.es/data/flags/h80/us.webp",
   gra: "https://www.banderas-mundo.es/data/flags/h80/gd.webp",
   gua: "https://flagcdn.com/w320/gt.png",
   gu: "https://flagcdn.com/w320/gy.png",
@@ -42,14 +43,14 @@ const banderas = {
   aze: "https://flagcdn.com/w320/az.png",
   ban: "https://flagcdn.com/w320/bd.png",
   bar: "https://www.banderas-mundo.es/data/flags/h80/bh.webp",
-  brm:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flag_of_Myanmar.svg/250px-Flag_of_Myanmar.svg.png",
+  brm: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flag_of_Myanmar.svg/250px-Flag_of_Myanmar.svg.png",
   bru: "https://flagcdn.com/w320/bn.png",
   but: "https://flagcdn.com/w320/bt.png",
   cam: "https://flagcdn.com/w320/kh.png",
   cata: "https://flagcdn.com/w320/qa.png",
   chn: "https://flagcdn.com/w320/cn.png",
   cn: "https://www.banderas-mundo.es/data/flags/h80/kp.webp",
-  cs:"https://www.banderas-mundo.es/data/flags/h80/kr.webp",
+  cs: "https://www.banderas-mundo.es/data/flags/h80/kr.webp",
   emaru: "https://flagcdn.com/w320/ae.png",
   fil: "https://flagcdn.com/w320/ph.png",
   ind: "https://flagcdn.com/w320/in.png",
@@ -71,7 +72,7 @@ const banderas = {
   om: "https://flagcdn.com/w320/om.png",
   pak: "https://flagcdn.com/w320/pk.png",
   sing: "https://flagcdn.com/w320/sg.png",
-  sir:"https://www.banderas-mundo.es/data/flags/h80/sy.webp",
+  sir: "https://www.banderas-mundo.es/data/flags/h80/sy.webp",
   slan: "https://flagcdn.com/w320/lk.png",
   tay: "https://www.banderas-mundo.es/data/flags/h80/tj.webp",
   tai: "https://flagcdn.com/w320/th.png",
@@ -122,7 +123,7 @@ const banderas = {
   rch: "https://www.banderas-mundo.es/data/flags/h80/cz.webp",
   rum: "https://flagcdn.com/w320/ro.png",
   ru: "https://flagcdn.com/w320/ru.png",
-  smar:"https://www.banderas-mundo.es/data/flags/h80/sm.webp",
+  smar: "https://www.banderas-mundo.es/data/flags/h80/sm.webp",
   srb: "https://flagcdn.com/w320/rs.png",
   sue: "https://flagcdn.com/w320/se.png",
   siz: "https://flagcdn.com/w320/ch.png",
@@ -131,25 +132,164 @@ const banderas = {
   vat: "https://flagcdn.com/w320/va.png",
 };
 
+const enlaces = {
+  antybarb: "https://es.wikipedia.org/wiki/Antigua_y_Barbuda",
+  ar: "https://es.wikipedia.org/wiki/Argentina",
+  bah: "https://es.wikipedia.org/wiki/Bahamas",
+  brb: "https://es.wikipedia.org/wiki/Barbados",
+  bel: "https://es.wikipedia.org/wiki/Belice",
+  bol: "https://es.wikipedia.org/wiki/Bolivia",
+  bra: "https://es.wikipedia.org/wiki/Brasil",
+  can: "https://es.wikipedia.org/wiki/Canad%C3%A1",
+  chi: "https://es.wikipedia.org/wiki/Chile",
+  col: "https://es.wikipedia.org/wiki/Colombia",
+  cos: "https://es.wikipedia.org/wiki/Costa_Rica",
+  cub: "https://es.wikipedia.org/wiki/Cuba",
+  dom: "https://es.wikipedia.org/wiki/Rep%C3%BAblica_Dominicana",
+  ecu: "https://es.wikipedia.org/wiki/Ecuador",
+  elsa: "https://es.wikipedia.org/wiki/El_Salvador",
+  eu: "https://es.wikipedia.org/wiki/Estados_Unidos",
+  gra: "https://es.wikipedia.org/wiki/Grenada",
+  gua: "https://es.wikipedia.org/wiki/Guatemala",
+  gu: "https://es.wikipedia.org/wiki/Guyana",
+  ha: "https://es.wikipedia.org/wiki/Hait%C3%AD",
+  hon: "https://es.wikipedia.org/wiki/Honduras",
+  jam: "https://es.wikipedia.org/wiki/Jamaica",
+  mex: "https://es.wikipedia.org/wiki/M%C3%A9xico",
+  ni: "https://es.wikipedia.org/wiki/Nicaragua",
+  pan: "https://es.wikipedia.org/wiki/Panam%C3%A1",
+  par: "https://es.wikipedia.org/wiki/Paraguay",
+  pe: "https://es.wikipedia.org/wiki/Per%C3%BA",
+  redom: "https://es.wikipedia.org/wiki/Rep%C3%BAblica_Dominicana",
+  sancyn: "https://es.wikipedia.org/wiki/San_Crist%C3%B3bal_y_Nevis",
+  sanvyg: "https://es.wikipedia.org/wiki/San_Vicente_y_las_Granadinas",
+  sanlu: "https://es.wikipedia.org/wiki/Santa_Luc%C3%ADa",
+  suri: "https://es.wikipedia.org/wiki/Surinam",
+  trito: "https://es.wikipedia.org/wiki/Trinidad_y_Tobago",
+  uru: "https://es.wikipedia.org/wiki/Uruguay",
+  ske: "https://es.wikipedia.org/wiki/Venezuela",
+  afg: "https://es.wikipedia.org/wiki/Afganist%C3%A1n",
+  arsau: "https://es.wikipedia.org/wiki/Arabia_Saudita",
+  arm: "https://es.wikipedia.org/wiki/Armenia",
+  aze: "https://es.wikipedia.org/wiki/Azerbaiy%C3%A1n",
+  ban: "https://es.wikipedia.org/wiki/Banglad%C3%A9s",
+  bar: "https://es.wikipedia.org/wiki/Bahrein",
+  brm: "https://es.wikipedia.org/wiki/Birmania",
+  bru: "https://es.wikipedia.org/wiki/Brun%C3%A9i",
+  but: "https://es.wikipedia.org/wiki/But%C3%A1n",
+  cam: "https://es.wikipedia.org/wiki/Camboya",
+  cata: "https://es.wikipedia.org/wiki/Catar",
+  chn: "https://es.wikipedia.org/wiki/China",
+  cn: "https://es.wikipedia.org/wiki/Corea_del_Norte",
+  cs: "https://es.wikipedia.org/wiki/Corea_del_Sur",
+  emaru: "https://es.wikipedia.org/wiki/Emiratos_%C3%81rabes_Unidos",
+  fil: "https://es.wikipedia.org/wiki/Filipinas",
+  ind: "https://es.wikipedia.org/wiki/India",
+  indo: "https://es.wikipedia.org/wiki/Indonesia",
+  irk: "https://es.wikipedia.org/wiki/Irak",
+  irn: "https://es.wikipedia.org/wiki/Ir%C3%A1n",
+  is: "https://es.wikipedia.org/wiki/israel",
+  jp: "https://es.wikipedia.org/wiki/Jap%C3%B3n",
+  jod: "https://es.wikipedia.org/wiki/Jordania",
+  kazj: "https://es.wikipedia.org/wiki/Kazajist%C3%A1n",
+  kir: "https://es.wikipedia.org/wiki/Kirguist%C3%A1n",
+  kuw: "https://es.wikipedia.org/wiki/Kuwait",
+  lao: "https://es.wikipedia.org/wiki/Laos",
+  lib: "https://es.wikipedia.org/wiki/L%C3%ADbano",
+  mal: "https://es.wikipedia.org/wiki/Malasia",
+  mad: "https://es.wikipedia.org/wiki/Maldivas",
+  mon: "https://es.wikipedia.org/wiki/Mongolia",
+  nep: "https://es.wikipedia.org/wiki/Nepal",
+  om: "https://es.wikipedia.org/wiki/Om%C3%A1n",
+  pak: "https://es.wikipedia.org/wiki/Pakist%C3%A1n",
+  sing: "https://es.wikipedia.org/wiki/Singapur",
+  sir: "https://es.wikipedia.org/wiki/Siria",
+  slan: "https://es.wikipedia.org/wiki/Sri_Lanka",
+  tay: "https://es.wikipedia.org/wiki/Tayikist%C3%A1n",
+  tai: "https://es.wikipedia.org/wiki/Tailandia",
+  tior: "https://es.wikipedia.org/wiki/Timor_Leste",
+  trkm: "https://es.wikipedia.org/wiki/Turkmenist%C3%A1n",
+  trq: "https://es.wikipedia.org/wiki/Turqu%C3%ADa",
+  uzb: "https://es.wikipedia.org/wiki/Uzbekist%C3%A1n",
+  viet: "https://es.wikipedia.org/wiki/Vietnam",
+  ye: "https://es.wikipedia.org/wiki/Yemen",
+  alb: "https://es.wikipedia.org/wiki/Albania",
+  hit: "https://es.wikipedia.org/wiki/Alemania",
+  and: "https://es.wikipedia.org/wiki/Andorra",
+  aus: "https://es.wikipedia.org/wiki/Austria",
+  azer: "https://es.wikipedia.org/wiki/Azerbaiy%C3%A1n",
+  blg: "https://es.wikipedia.org/wiki/B%C3%A9lgica",
+  birr: "https://es.wikipedia.org/wiki/Bielorrusia",
+  bosher: "https://es.wikipedia.org/wiki/Bosnia_y_Herzegovina",
+  bulg: "https://es.wikipedia.org/wiki/Bulgaria",
+  chp: "https://es.wikipedia.org/wiki/Chipre",
+  croc: "https://es.wikipedia.org/wiki/Croacia",
+  dinm: "https://es.wikipedia.org/wiki/Dinamarca",
+  esq: "https://es.wikipedia.org/wiki/Eslovaquia",
+  esl: "https://es.wikipedia.org/wiki/Eslovenia",
+  sp: "https://es.wikipedia.org/wiki/Espa%C3%B1a",
+  est: "https://es.wikipedia.org/wiki/Estonia",
+  fin: "https://es.wikipedia.org/wiki/Finlandia",
+  fr: "https://es.wikipedia.org/wiki/Francia",
+  gr: "https://es.wikipedia.org/wiki/Georgia",
+  gc: "https://es.wikipedia.org/wiki/Grecia",
+  hug: "https://es.wikipedia.org/wiki/Hungr%C3%ADa",
+  irl: "https://es.wikipedia.org/wiki/Irlanda",
+  isl: "https://es.wikipedia.org/wiki/Islandia",
+  it: "https://es.wikipedia.org/wiki/Italia",
+  kos: "https://es.wikipedia.org/wiki/Kosovo",
+  let: "https://es.wikipedia.org/wiki/Letonia",
+  liech: "https://es.wikipedia.org/wiki/Liechtenstein",
+  lit: "https://es.wikipedia.org/wiki/Lituania",
+  lux: "https://es.wikipedia.org/wiki/Luxemburgo",
+  mlt: "https://es.wikipedia.org/wiki/Malta",
+  mld: "https://es.wikipedia.org/wiki/Moldavia",
+  mon: "https://es.wikipedia.org/wiki/M%C3%B3naco",
+  mnt: "https://es.wikipedia.org/wiki/Montenegro",
+  nor: "https://es.wikipedia.org/wiki/Noruega",
+  psb: "https://es.wikipedia.org/wiki/Pa%C3%ADses_Bajos",
+  pol: "https://es.wikipedia.org/wiki/Polonia",
+  prt: "https://es.wikipedia.org/wiki/Portugal",
+  uk: "https://es.wikipedia.org/wiki/Reino_Unido",
+  rch: "https://es.wikipedia.org/wiki/Rep%C3%BAblica_Checa",
+  rum: "https://es.wikipedia.org/wiki/Ruman%C3%ADa",
+  ru: "https://es.wikipedia.org/wiki/Rusia",
+  smar: "https://es.wikipedia.org/wiki/San_Marino",
+  srb: "https://es.wikipedia.org/wiki/Serbia",
+  sue: "https://es.wikipedia.org/wiki/Suecia",
+  siz: "https://es.wikipedia.org/wiki/Suiza",
+  tur: "https://es.wikipedia.org/wiki/Turqu%C3%ADa",
+  uc: "https://es.wikipedia.org/wiki/Ucrania",
+  vat: "https://es.wikipedia.org/wiki/Vaticano",
+};
+
 // Referencias a selects e imágenes
 const selectIzq = document.getElementById("select-izq");
 const selectDer = document.getElementById("select-der");
 const imgIzq = document.getElementById("bandera-izq");
 const imgDer = document.getElementById("bandera-der");
+const linkIzq = document.getElementById("link-izq");
+const linkDer = document.getElementById("link-der");
 
 // Cuando cambie la opción del select izquierdo
 selectIzq.addEventListener("change", () => {
   const pais = selectIzq.value;
   imgIzq.src = banderas[pais];
+  linkIzq.href = enlaces[pais] || "#";
 });
 
 // Cuando cambie la opción del select derecho
 selectDer.addEventListener("change", () => {
   const pais = selectDer.value;
   imgDer.src = banderas[pais];
+  linkDer.href = enlaces[pais] || "#";
 });
 // Inicializar las imágenes al cargar la página
 window.addEventListener("DOMContentLoaded", () => {
-  imgIzq.src = banderas[selectIzq.value];
-  imgDer.src = banderas[selectDer.value];
+  const paisIzq = selectIzq.value;
+  const paisDer = selectDer.value;
+  imgIzq.src = banderas[paisIzq];
+  imgDer.src = banderas[paisDer];
+  linkIzq.href = enlaces[paisIzq] || "#";
+  linkDer.href = enlaces[paisDer] || "#";
 });

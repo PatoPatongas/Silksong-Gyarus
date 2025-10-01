@@ -50,3 +50,17 @@ img#bandera-der {
     height: auto;
 }
 
+.img-texto {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: center;    /* Centra ambos horizontalmente */
+    margin: 10px;
+}
+
+.texto-imagen {
+    margin-top: 8px;
+    font-size: 14px;
+    color: black;
+    background: none; /* si no quieres el verde del p */
+    border: none;     /* si no quieres el borde negro */
+}
