@@ -1,4 +1,5 @@
 /* ESTILOS MAIN */
+/* ID simple */
 #body-main {
     margin: 0;
     border: 5px solid black;
@@ -11,6 +12,7 @@
     flex-direction: column;
 }
 
+/* Etiquetas dentro de body-main */
 #body-main form {
     border: 5px solid black;
     border-radius: 15px;
@@ -53,40 +55,39 @@ input {
     border-radius: 10px;
 }
 
-#body-main .imagenes {
-    display: inline-flex;
-    /* Pone los contenedores en la misma linea */
-    justify-content: space-between;
-    /* Coloca todo el espacio posible entre ambas imagenes */
-    align-items: center;
+#body-main a {
     border: 5px solid black;
-    background-color: crimson;
 }
 
-#body-main img#bandera-izq {
-    max-width: 150px;
-    height: auto;
-}
-
-#body-main img#bandera-der {
-    max-width: 150px;
-    height: auto;
-}
-
-#body-main .img-texto {
-    display: flex;
-    /* Imagen arriba, texto abajo */
-    flex-direction: column;
-    /* Centra ambos horizontalmente */
-    align-items: center;
-    margin: 15px;
-}
-
+/* ID con clase / clases */
 #body-main.texto-imagen {
     margin-top: 8px;
     font-size: 14px;
     color: black;
 }
+
+#body-main .imagenes {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+    background-color: crimson;
+}
+
+#body-main .img-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+/* Etiqueta + ID */
+#body-main img#bandera-izq,
+#body-main img#bandera-der {
+    max-width: 150px;
+    height: auto;
+}
+
 
 /* ESTILO CRÉDITOS */
 #body-creditos {

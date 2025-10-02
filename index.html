@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bienvenida</title>
+    <title>Inicio</title>
+
     <style>
         body {
-            background: linear-gradient(to bottom, #ff0000, #000000);
             height: 100vh;
             justify-content: center;
+            font-family: 'Comic Sans MS';
+
+            background-image:
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(109, 148, 255, 0.5)),
+                url('banderas.webp');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .selector {
@@ -18,7 +27,7 @@
             text-align: center;
             margin: 40px 150px 0 150px;
             padding: 5px;
-            background: white;
+            background: rgb(230, 89, 89);
             box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.2);
         }
 
@@ -27,10 +36,17 @@
             margin: 0 10px;
             background: rgb(255, 238, 0);
             cursor: pointer;
+            padding-block: 10px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        button:hover {
+            transition: transform 0.5s ease;
+            transform: scale(1.05);
         }
 
         .container {
-            background-color: rgba(177, 58, 58, 0.5);
+            background-color: rgb(177, 58, 58);
             padding: 50px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             border: 3px solid black;
@@ -46,26 +62,30 @@
             margin-top: 100px;
         }
     </style>
+
 </head>
 
 <body>
-    
-    <h1 style="text-align: center; color: #000000; text-shadow: 2px 1px 1px white; font-size: 42px;">continentes disponibles</h1>
 
-    <div class="selector">
-        <h2 style="color: black;">seleccione uno para mas informacion</h2>
-        <button onclick="location.href='paises.html'">America</button>
-        <button onclick="location.href='#'">Asia</button>
-        <button onclick="location.href='#'">Europa</button>
+    <h1
+        style="background-color: yellow; text-align: center; color: #000000; text-shadow: 2px 1px 1px white; font-size: 42px; border: 3px solid black;">
+        Continentes
+        disponibles</h1>
+
+    <div class="selector" style="border-radius: 10px;">
+        <h2 style="color: black; border: 3px solid black;">Seleccione un continente para obtener mas informacion</h2>
+
+        <button onclick="location.href='paises.html#America'">America</button>
+        <button onclick="location.href='paises.html#Asia'">Asia</button>
+        <button onclick="location.href='paises.html#Europa'">Europa</button>
     </div>
 
     <section>
-        <div class="container">
-            <h1>¡Bienvenido al Cambio de Divisas!</h1>
-            <p>Convierte tus monedas de forma rápida y sencilla.</p>
-            <button onclick="location.href='main.html'">
-                Ir a la página de cambio
-            </button>
+        <div class="container" style="border-radius: 10px;">
+            <h1 style="border: 3px solid black;">¡Bienvenido al Cambio de Divisas!</h1>
+
+            <p style="border: 3px solid black;">Convierte tus monedas de forma rápida y sencilla.</p>
+            <button onclick="location.href='main.html'"> Ir a la página de cambio </button>
     </section>
 </body>
 
