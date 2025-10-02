@@ -136,7 +136,7 @@ input {
 /* Animación que sube los créditos */
 @keyframes scrollUp {
     0% {
-        bottom: -300%;
+        bottom: -343%;
     }
 
     100% {
