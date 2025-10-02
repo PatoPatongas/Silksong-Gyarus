@@ -109,7 +109,7 @@ const ratesToUSD = {
   GBR: 0.81,
   CZE: 22.0,
   ROU: 4.6,
-  RUS: 97.0,
+  RUb: 97.0,
   SMR: 0.92,
   SRB: 110.0,
   SWE: 10.5,
