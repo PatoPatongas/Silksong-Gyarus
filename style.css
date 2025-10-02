@@ -124,7 +124,7 @@ input {
     font-family: monospace;
     font-size: 54px;
     text-align: center;
-    animation: scrollUp 15s linear infinite;
+    animation: scrollUp 30s linear infinite;
 }
 
 #body-creditos .credits div {
