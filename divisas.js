@@ -80,11 +80,11 @@ const ratesToUSD = {
   ALL: 110.0, // Albania
   EUR: 0.92, // Alemania, Andorra, Austria, Bélgica, España, Francia, Finlandia, Grecia, Irlanda, Italia, Kosovo, Letonia, Liechtenstein, Lituania, Luxemburgo, Malta, Mónaco, Montenegro, Países Bajos, Portugal, San Marino, Vaticano
   BLR: 2.5, // Bielorrusia
-  BAM: 1.84, // Bosnia y Herzegovina
-  BGN: 1.82, // Bulgaria
+  BIH: 1.84, // Bosnia y Herzegovina
+  BGR: 1.82, // Bulgaria
   HRK: 6.9, // Croacia
   CZK: 22.0, // República Checa
-  DKK: 7.0, // Dinamarca
+  DNK: 7.0, // Dinamarca
   HUF: 353.0, // Hungría
   ISK: 140.0, // Islandia
   NOK: 10.5, // Noruega
