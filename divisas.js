@@ -1,4 +1,5 @@
 const ratesToUSD = {
+  // América
   MXN: 18.0,
   ARS: 140.0,
   USD: 1.0,
@@ -26,6 +27,10 @@ const ratesToUSD = {
   TTD: 6.75,
   UYU: 45.0,
   VES: 25.0,
+  XCD: 2.7, // Caribe (ej. Antigua y Barbuda, Dominica)
+  SVC: 8.75, // El Salvador
+
+  // Asia
   AFN: 87.0,
   SAR: 3.75,
   AMD: 385.0,
@@ -70,52 +75,29 @@ const ratesToUSD = {
   UZS: 11600.0,
   VND: 24000.0,
   YER: 250.0,
-  ALL: 110.0,
-  EUR: 0.92,
-  AND: 0.92,
-  AUT: 0.92,
-  BEL: 0.92,
-  BLR: 2.5,
-  BIH: 1.84,
-  BGR: 1.82,
-  CYP: 0.92,
-  HRK: 6.9,
-  DNK: 7.0,
-  SVK: 0.92,
-  SVN: 0.92,
-  ESP: 0.92,
-  EST: 0.92,
-  FIN: 0.92,
-  FRA: 0.92,
-  GEO: 2.6,
-  GRC: 0.92,
-  HUN: 353.0,
-  IRL: 0.92,
-  ISL: 140.0,
-  ITA: 0.92,
-  KOS: 0.92,
-  LVA: 0.92,
-  LIE: 0.92,
-  LTU: 0.92,
-  LUX: 0.92,
-  MLT: 0.92,
-  MDA: 19.0,
-  MCO: 0.92,
-  MNE: 0.92,
-  NOR: 10.5,
-  NLD: 0.92,
-  POL: 4.25,
-  PRT: 0.92,
-  GBR: 0.81,
-  CZE: 22.0,
-  ROU: 4.6,
-  RUB: 97.0,
-  SMR: 0.92,
-  SRB: 110.0,
-  SWE: 10.5,
-  CHE: 0.92,
-  UKR: 37.0,
-  VAT: 0.92,
+
+  // Europa
+  ALL: 110.0, // Albania
+  EUR: 0.92, // Alemania, Andorra, Austria, Bélgica, España, Francia, Finlandia, Grecia, Irlanda, Italia, Kosovo, Letonia, Liechtenstein, Lituania, Luxemburgo, Malta, Mónaco, Montenegro, Países Bajos, Portugal, San Marino, Vaticano
+  BLR: 2.5, // Bielorrusia
+  BAM: 1.84, // Bosnia y Herzegovina
+  BGN: 1.82, // Bulgaria
+  HRK: 6.9, // Croacia
+  CZK: 22.0, // República Checa
+  DKK: 7.0, // Dinamarca
+  HUF: 353.0, // Hungría
+  ISK: 140.0, // Islandia
+  NOK: 10.5, // Noruega
+  PLN: 4.25, // Polonia
+  RON: 4.6, // Rumanía
+  RUB: 97.0, // Rusia
+  RSD: 110.0, // Serbia
+  SEK: 10.5, // Suecia
+  CHF: 0.92, // Suiza
+  UAH: 37.0, // Ucrania
+  GBP: 0.81, // Reino Unido
+  GEL: 2.6, // Georgia
+  ISL: 140.0, // Islandia
 };
 
 const countryToCurrency = {
