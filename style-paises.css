@@ -1,0 +1,74 @@
+/* - - - - - - - BODY PAISES - - - - - - - */
+#body-paises {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 40px;
+
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(60, 106, 232, 0.5)),
+        url('banderas.webp');
+}
+
+#body-paises .ventana {
+    width: 92.5vw;
+    height: 50vh;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+#body-paises .titulo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#body-paises .scroll-diagonal-container {
+    width: 100%;
+    height: 330px;
+    overflow: auto;
+}
+
+#body-paises .scroll-diagonal-content {
+    display: flex;
+    gap: 15px;
+    padding: 2px;
+}
+
+#body-paises .pais {
+    background-color: #e0e0e0;
+    padding: 20px;
+    padding-inline: 45px;
+    border-radius: 8px;
+    width: 150px;
+    flex-shrink: 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    width: 190px;
+    text-align: center;
+    margin: 0;
+}
+
+#body-paises .pais img {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#body-paises .pais-nombre {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#body-paises .pais-info {
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+}
