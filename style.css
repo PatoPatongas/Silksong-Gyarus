@@ -83,11 +83,11 @@
 /* - - - - - - - ESTILOS MAIN - - - - - - - */
 #body-main {
     margin: 0;
-    background-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(109, 148, 255, 0.5)),
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(60, 106, 232, 0.5)),
         url('banderas.webp');
 
-    background-size: cover;
+    background-size: cover; /* necesario para animar */
     background-position: center;
     background-repeat: no-repeat;
 
@@ -100,15 +100,15 @@
 }
 
 #body-main form {
-    border: 2px solid black;
     border-radius: 15px;
     padding: 55px;
-    background-color: blueviolet;
+    background-color: transparent;
+    color: white;
 }
 
 #body-main select, input {
-    padding: 2px;
-    border: 2px solid black;
+    padding: 4px;
+    border: 2px solid #2c3e50;
     border-radius: 5px;
 }
 
@@ -124,35 +124,55 @@
     margin-bottom: 50px;
     margin-top: -50px;
     font-size: 50px;
-    text-shadow: 2px 2px 2px white;
+    text-shadow: 5px 5px 5px wheat; 
 }
 
 #body-main p {
-    border: 2px solid black;
+    border: 2px solid #2c3e50;
     padding: 5px;
-    background-color: greenyellow;
+    background-color: #f1c40f;
+    color: #2c3e50;
 }
 
 #body-main button {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: -40px;
-    border: 2px solid black;
+    border: 2px solid #2c3e50;
     border-radius: 10px;
+    background-color: #3498db; 
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#body-main button:hover {
+    transform: scale(1.1);
+    background-color: #2980b9;
 }
 
 #body-main.texto-imagen {
     margin-top: 8px;
     font-size: 14px;
-    color: black;
+    color: #2c3e50;
 }
 
 #body-main .imagenes {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid black;
-    background: linear-gradient(to right, rgb(188, 2, 2), rgb(9, 9, 98), purple);
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+
+    background: linear-gradient(270deg, #e74c3c, #8e44ad, #3498db, #f1c40f);
+    background-size: 800% 800%;
+    animation: imagenesGradient 20s ease infinite;
+}
+
+@keyframes imagenesGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 #body-main .img-texto {
@@ -168,6 +188,7 @@
     height: auto;
     border-radius: 5px;
 }
+
 
 
 /* - - - - - - - ESTILO CRÉDITOS - - - - - - - */
