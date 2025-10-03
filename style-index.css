@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 51px;
 }
 
 #body-index .selector {
@@ -63,12 +63,12 @@
 #body-index .container {
     width: 100%;
     max-width: 900px;
-    margin-top: 40px;
+    margin-top: 10px;
     padding: 50px 60px;
     border-radius: 30px;
     background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
     box-shadow: 0 25px 50px rgba(246, 79, 89, 0.4);
-    color: #fff;
+    color: #0f0f0f;
     font-weight: 600;
     letter-spacing: 0.04em;
     animation: containerGlow 10s ease-in-out infinite;
