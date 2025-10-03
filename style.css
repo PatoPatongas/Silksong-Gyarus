@@ -70,6 +70,14 @@
     border: 5px solid black;
 }
 
+#body-index h1#titulo-2 {
+    border: 5px solid black;
+}
+
+#body-index p#descripcion {
+    border: 3px solid black;
+}
+
 /* - - - - - - - ESTILOS MAIN - - - - - - - */
 #body-main {
     margin: 0;
