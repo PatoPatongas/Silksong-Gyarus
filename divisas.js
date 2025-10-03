@@ -1,5 +1,5 @@
 const ratesToUSD = {
-  // América
+  // - - - AMERICA - - - //
   MXN: 18.0,
   ARS: 140.0,
   USD: 1.0,
@@ -27,10 +27,10 @@ const ratesToUSD = {
   TTD: 6.75,
   UYU: 45.0,
   VES: 25.0,
-  XCD: 2.7, // Caribe (ej. Antigua y Barbuda, Dominica)
-  SVC: 8.75, // El Salvador
+  XCD: 2.7,
+  SVC: 8.75, 
 
-  // Asia
+  // - - - ASIA - - - //
   AFN: 87.0,
   SAR: 3.75,
   AMD: 385.0,
@@ -76,50 +76,50 @@ const ratesToUSD = {
   VND: 24000.0,
   YER: 250.0,
 
-  // Europa
-  ALL: 110.0, // Albania
-  EUR: 0.92, // Alemania, Andorra, Austria, Bélgica, España, Francia, Finlandia, Grecia, Irlanda, Italia, Kosovo, Letonia, Liechtenstein, Lituania, Luxemburgo, Malta, Mónaco, Montenegro, Países Bajos, Portugal, San Marino, Vaticano
-  BLR: 2.5, // Bielorrusia
-  BIH: 1.84, // Bosnia y Herzegovina
-  BGR: 1.82, // Bulgaria
-  HRK: 6.9, // Croacia
-  CZK: 22.0, // República Checa
-  DNK: 7.0, // Dinamarca
-  HUF: 353.0, // Hungría
-  ISK: 140.0, // Islandia
-  NOK: 10.5, // Noruega
-  PLN: 4.25, // Polonia
-  RON: 4.6, // Rumanía
-  RUB: 97.0, // Rusia
-  RSD: 110.0, // Serbia
-  SEK: 10.5, // Suecia
-  CHF: 0.92, // Suiza
-  UAH: 37.0, // Ucrania
-  GBP: 0.81, // Reino Unido
-  GEL: 2.6, // Georgia
-  ISL: 140.0, // Islandia
+  // - - - EUROPA - - - //
+  ALL: 110.0,
+  EUR: 0.92,
+  BLR: 2.5,
+  BIH: 1.84,
+  BGR: 1.82,
+  HRK: 6.9,
+  CZK: 22.0,
+  DNK: 7.0,
+  HUF: 353.0,
+  ISK: 140.0,
+  NOK: 10.5,
+  PLN: 4.25,
+  RON: 4.6,
+  RUB: 97.0,
+  RSD: 110.0,
+  SEK: 10.5,
+  CHF: 0.92,
+  UAH: 37.0,
+  GBP: 0.81,
+  GEL: 2.6,
+  ISL: 140.0,
 };
 
 const countryToCurrency = {
-  // América
-  antybarb: "XCD", // Antigua y Barbuda
-  ar: "ARS", // Argentina
-  bah: "BSD", // Bahamas
-  brb: "BBD", // Barbados
-  bel: "BZD", // Belice
-  bol: "BOB", // Bolivia
-  bra: "BRL", // Brasil
-  can: "CAD", // Canadá
-  chi: "CLP", // Chile
-  col: "COP", // Colombia
-  cos: "CRC", // Costa Rica
-  cub: "CUP", // Cuba
-  dom: "XCD", // Dominica
-  ecu: "USD", // Ecuador
-  elsa: "SVC", // El Salvador
-  eu: "USD", // Estados Unidos
-  gra: "XCD", // Granada
-  gua: "GTQ", // Guatemala
+  // - - - AMERICA - - - //
+  antybarb: "XCD", 
+  ar: "ARS", 
+  bah: "BSD", 
+  brb: "BBD", 
+  bel: "BZD", 
+  bol: "BOB", 
+  bra: "BRL", 
+  can: "CAD", 
+  chi: "CLP", 
+  col: "COP", 
+  cos: "CRC", 
+  cub: "CUP", 
+  dom: "XCD", 
+  ecu: "USD", 
+  elsa: "SVC", 
+  eu: "USD", 
+  gra: "XCD",
+  gua: "GTQ",
   gu: "GYD", // Guyana
   ha: "HTG", // Haití
   hon: "HNL", // Honduras
@@ -138,7 +138,7 @@ const countryToCurrency = {
   uru: "UYU", // Uruguay
   ske: "VES", // Venezuela
 
-  // Asia
+  // - - - ASIA - - - //
   afg: "AFN", // Afganistán
   arsau: "SAR", // Arabia Saudita
   arm: "AMD", // Armenia
@@ -185,7 +185,7 @@ const countryToCurrency = {
   viet: "VND", // Vietnam
   ye: "YER", // Yemen
 
-  // Europa
+  // - - - EUROPA - - - //
   alb: "ALL", // Albania
   hit: "EUR", // Alemania
   and: "EUR", // Andorra
@@ -270,7 +270,7 @@ document.getElementById("bt-calc").addEventListener("click", () => {
     const destinoMoneda = countryToCurrency[destinoPais];
     document.getElementById(
       "resultado"
-    ).textContent = `${cantidad} ${origenMoneda} = ${resultado.toFixed(
+    ).textContent = `${resultado.toFixed(
       2
     )} ${destinoMoneda}`;
   }
