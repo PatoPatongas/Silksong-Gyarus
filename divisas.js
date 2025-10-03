@@ -120,119 +120,119 @@ const countryToCurrency = {
   eu: "USD", 
   gra: "XCD",
   gua: "GTQ",
-  gu: "GYD", // Guyana
-  ha: "HTG", // Haití
-  hon: "HNL", // Honduras
-  jam: "JMD", // Jamaica
-  mex: "MXN", // México
-  nica: "NIO", // Nicaragua
-  pan: "PAB", // Panamá
-  par: "PYG", // Paraguay
-  pe: "PEN", // Perú
-  redom: "DOP", // República Dominicana
-  sancyn: "XCD", // San Cristóbal y Nieves
-  sanvyg: "XCD", // San Vicente y las Granadinas
-  sanlu: "XCD", // Santa Lucía
-  suri: "SRD", // Surinam
-  trito: "TTD", // Trinidad y Tobago
-  uru: "UYU", // Uruguay
-  ske: "VES", // Venezuela
+  gu: "GYD", 
+  ha: "HTG", 
+  hon: "HNL", 
+  jam: "JMD", 
+  mex: "MXN", 
+  nica: "NIO", 
+  pan: "PAB", 
+  par: "PYG", 
+  pe: "PEN", 
+  redom: "DOP", 
+  sancyn: "XCD", 
+  sanvyg: "XCD", 
+  sanlu: "XCD", 
+  suri: "SRD", 
+  trito: "TTD", 
+  uru: "UYU", 
+  ske: "VES", 
 
   // - - - ASIA - - - //
-  afg: "AFN", // Afganistán
-  arsau: "SAR", // Arabia Saudita
-  arm: "AMD", // Armenia
-  aze: "AZN", // Azerbaiyán
-  ban: "BDT", // Bangladés
-  bar: "BHD", // Baréin
-  brm: "MMK", // Birmania
-  bru: "BND", // Brunéi
-  but: "BTN", // Bután
-  cam: "KHR", // Camboya
-  cata: "QAR", // Catar
-  chn: "CNY", // China
-  cn: "KPW", // Corea del Norte
-  cs: "KRW", // Corea del Sur
-  emaru: "AED", // Emiratos Árabes Unidos
-  fil: "PHP", // Filipinas
-  ind: "INR", // India
-  indo: "IDR", // Indonesia
-  irk: "IQD", // Irak
-  irn: "IRR", // Irán
-  is: "ILS", // Israel
-  jp: "JPY", // Japón
-  jod: "JOD", // Jordania
-  kazj: "KZT", // Kazajistán
-  kir: "KGS", // Kirguistán
-  kuw: "KWD", // Kuwait
-  lao: "LAK", // Laos
-  lib: "LBP", // Líbano
-  mal: "MYR", // Malasia
-  mad: "MVR", // Maldivas
-  mon: "MNT", // Mongolia
-  nep: "NPR", // Nepal
-  om: "OMR", // Omán
-  pak: "PKR", // Pakistán
-  sing: "SGD", // Singapur
-  sir: "SYP", // Siria
-  slan: "LKR", // Sri Lanka
-  tay: "TJS", // Tayikistán
-  tai: "THB", // Tailandia
-  tior: "USD", // Timor Oriental
-  trkm: "TMT", // Turkmenistán
-  trq: "TRY", // Turquía
-  uzb: "UZS", // Uzbekistán
-  viet: "VND", // Vietnam
-  ye: "YER", // Yemen
+  afg: "AFN", 
+  arsau: "SAR", 
+  arm: "AMD", 
+  aze: "AZN", 
+  ban: "BDT", 
+  bar: "BHD", 
+  brm: "MMK", 
+  bru: "BND", 
+  but: "BTN", 
+  cam: "KHR", 
+  cata: "QAR", 
+  chn: "CNY", 
+  cn: "KPW", 
+  cs: "KRW", 
+  emaru: "AED", 
+  fil: "PHP", 
+  ind: "INR", 
+  indo: "IDR", 
+  irk: "IQD", 
+  irn: "IRR", 
+  is: "ILS", 
+  jp: "JPY", 
+  jod: "JOD", 
+  kazj: "KZT", 
+  kir: "KGS", 
+  kuw: "KWD", 
+  lao: "LAK", 
+  lib: "LBP", 
+  mal: "MYR", 
+  mad: "MVR", 
+  mon: "MNT", 
+  nep: "NPR", 
+  om: "OMR", 
+  pak: "PKR", 
+  sing: "SGD", 
+  sir: "SYP", 
+  slan: "LKR", 
+  tay: "TJS", 
+  tai: "THB", 
+  tior: "USD", 
+  trkm: "TMT", 
+  trq: "TRY", 
+  uzb: "UZS", 
+  viet: "VND", 
+  ye: "YER",
 
   // - - - EUROPA - - - //
-  alb: "ALL", // Albania
-  hit: "EUR", // Alemania
-  and: "EUR", // Andorra
-  aus: "EUR", // Austria
-  azer: "AZN", // Azerbaiyán
-  blg: "EUR", // Bélgica
-  birr: "BLR", // Bielorrusia
-  bosher: "BIH", // Bosnia y Herzegovina
-  bulg: "BGR", // Bulgaria
-  chp: "CYP", // Chipre
-  croc: "HRK", // Croacia
-  dinm: "DNK", // Dinamarca
-  esq: "SVK", // Eslovaquia
-  esl: "SVN", // Eslovenia
-  sp: "EUR", // España
-  est: "EUR", // Estonia
-  fin: "EUR", // Finlandia
-  fr: "EUR", // Francia
-  gr: "GEO", // Georgia
-  gc: "EUR", // Grecia
-  hug: "HUN", // Hungría
-  irl: "EUR", // Irlanda
-  isl: "ISK", // Islandia
-  it: "EUR", // Italia
-  kos: "EUR", // Kosovo
-  let: "EUR", // Letonia
-  liech: "EUR", // Liechtenstein
-  lit: "EUR", // Lituania
-  lux: "EUR", // Luxemburgo
-  mlt: "EUR", // Malta
-  mld: "MDA", // Moldavia
-  mon: "EUR", // Mónaco
-  mnt: "EUR", // Montenegro
-  nor: "NOK", // Noruega
-  psb: "EUR", // Países Bajos
-  pol: "PLN", // Polonia
-  prt: "EUR", // Portugal
-  uk: "GBP", // Reino Unido
-  rch: "CZK", // República Checa
-  rum: "RON", // Rumanía
-  ru: "RUB", // Rusia
-  smar: "EUR", // San Marino
-  srb: "RSD", // Serbia
-  sue: "SEK", // Suecia
-  siz: "CHF", // Suiza
-  uc: "UAH", // Ucrania
-  vat: "EUR", // Vaticano
+  alb: "ALL", 
+  hit: "EUR", 
+  and: "EUR", 
+  aus: "EUR", 
+  azer: "AZN", 
+  blg: "EUR", 
+  birr: "BLR", 
+  bosher: "BIH", 
+  bulg: "BGR", 
+  chp: "CYP", 
+  croc: "HRK", 
+  dinm: "DNK", 
+  esq: "SVK", 
+  esl: "SVN", 
+  sp: "EUR", 
+  est: "EUR", 
+  fin: "EUR", 
+  fr: "EUR", 
+  gr: "GEO", 
+  gc: "EUR", 
+  hug: "HUN", 
+  irl: "EUR", 
+  isl: "ISK", 
+  it: "EUR", 
+  kos: "EUR", 
+  let: "EUR", 
+  liech: "EUR", 
+  lit: "EUR", 
+  lux: "EUR", 
+  mlt: "EUR", 
+  mld: "MDA", 
+  mon: "EUR", 
+  mnt: "EUR", 
+  nor: "NOK", 
+  psb: "EUR", 
+  pol: "PLN", 
+  prt: "EUR", 
+  uk: "GBP", 
+  rch: "CZK", 
+  rum: "RON", 
+  ru: "RUB", 
+  smar: "EUR", 
+  srb: "RSD", 
+  sue: "SEK", 
+  siz: "CHF", 
+  uc: "UAH", 
+  vat: "EUR", 
 };
 
 function convertir(origenPais, destinoPais, cantidad) {
