@@ -73,6 +73,7 @@
     letter-spacing: 0.04em;
     animation: containerGlow 10s ease-in-out infinite;
     user-select: none;
+    margin-bottom: 30px;
 }
 
 #body-index h1#titulo {
@@ -116,7 +117,7 @@
 
 #body-main select,
 #body-main input {
-    padding: 12px 15px;
+    padding: 5px 5px;
     margin: 10px 0 20px;
     border: none;
     border-radius: 12px;
@@ -137,7 +138,7 @@
 #body-main section {
     text-align: center;
     border-radius: 15px;
-    margin: 50px auto;
+    margin: 20px 50px ;
     padding: 20px;
     background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: #fff;
