@@ -83,7 +83,6 @@
 /* - - - - - - - ESTILOS MAIN - - - - - - - */
 #body-main {
     margin: 0;
-    border: 5px solid black;
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(109, 148, 255, 0.5)),
         url('banderas.webp');
@@ -92,7 +91,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    height: 98.9vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,16 +100,15 @@
 }
 
 #body-main form {
-    border: 5px solid black;
+    border: 2px solid black;
     border-radius: 15px;
     padding: 55px;
     background-color: blueviolet;
 }
 
-#body-main select,
-input {
+#body-main select, input {
     padding: 2px;
-    border: 5px solid black;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
@@ -122,14 +120,15 @@ input {
 
 #body-main h1 {
     text-align: center;
-    border: 5px solid black;
     padding: 10px;
-    margin: -10px;
-    background-color: pink;
+    margin-bottom: 50px;
+    margin-top: -50px;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px white;
 }
 
 #body-main p {
-    border: 5px solid black;
+    border: 2px solid black;
     padding: 5px;
     background-color: greenyellow;
 }
@@ -138,12 +137,8 @@ input {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: -40px;
-    border: 5px solid black;
+    border: 2px solid black;
     border-radius: 10px;
-}
-
-#body-main a {
-    border: 5px solid black;
 }
 
 #body-main.texto-imagen {
@@ -156,8 +151,8 @@ input {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid black;
-    background-color: crimson;
+    border: 2px solid black;
+    background: linear-gradient(to right, rgb(188, 2, 2), rgb(9, 9, 98), purple);
 }
 
 #body-main .img-texto {
@@ -169,8 +164,9 @@ input {
 
 #body-main img#bandera-izq,
 #body-main img#bandera-der {
-    max-width: 150px;
+    max-width: 180px;
     height: auto;
+    border-radius: 5px;
 }
 
 
@@ -190,15 +186,6 @@ input {
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
-    border: 5px solid red;
-}
-
-#body-creditos div {
-    border: 5px solid red;
-}
-
-#body-creditos img {
-    border: 5px solid red;
 }
 
 #body-creditos .creditos-container {
@@ -214,8 +201,8 @@ input {
     width: 1400px;
     height: 700px;
     overflow: hidden;
-    border: 5px solid yellow;
     background-color: black;
+    border: 5px solid yellow;
 }
 
 #body-creditos .credits {
@@ -223,7 +210,7 @@ input {
     bottom: -70%;
     width: 100%;
     color: yellow;
-    font-family: monospace;
+    font-family: 'Comic Sans MS', sans-serif;
     font-size: 54px;
     text-align: center;
     animation: scrollUp 30s linear infinite;
@@ -241,13 +228,12 @@ input {
 }
 
 #body-creditos div.border-wf {
-    border: 5px solid white;
     margin-left: 250px;
     margin-right: 250px;
+    border: 3px solid wheat;
 }
 
 #body-creditos div.border-logo {
-    border: 5px solid white;
     margin-left: 350px;
     margin-right: 350px;
 }
