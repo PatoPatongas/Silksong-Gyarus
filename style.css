@@ -275,7 +275,6 @@
     margin-right: 350px;
 }
 
-/* Animación que sube los créditos */
 @keyframes scrollUp {
     0% {
         bottom: -343%;
@@ -292,7 +291,10 @@
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     padding: 40px;
-    border: 5px solid black;
+
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(60, 106, 232, 0.5)),
+        url('banderas.webp');
 }
 
 #body-paises .ventana {
@@ -305,28 +307,24 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin-top: 25px;
-    border: 5px solid black;
 }
 
 #body-paises .titulo {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 15px;
-    border: 5px solid black;
 }
 
 #body-paises .scroll-diagonal-container {
     width: 100%;
     height: 330px;
     overflow: auto;
-    border: 5px solid blueviolet;
 }
 
 #body-paises .scroll-diagonal-content {
     display: flex;
     gap: 15px;
     padding: 2px;
-    border: 5px solid orange;
 }
 
 #body-paises .pais {
@@ -337,7 +335,7 @@
     flex-shrink: 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: 5px solid yellow;
+    border: 1px solid black;
 }
 
 #body-paises .pais img {
@@ -345,18 +343,14 @@
     height: 50px;
     object-fit: cover;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border: 5px solid red;
 }
 
 #body-paises .pais-nombre {
     font-weight: bold;
     margin-bottom: 5px;
-    border: 5px solid black;
 }
 
 #body-paises .pais-info {
     font-size: 14px;
     color: #333;
-    border: 5px solid black;
 }
