@@ -1,10 +1,9 @@
 /* - - - - - - - ESTILOS INDEX - - - - - - - */
 #body-index {
-    height: 98.9vh;
+    height: 96vh;
     justify-content: center;
     font-family: 'Comic Sans MS';
     margin: 0;
-    border: 5px solid black;
 
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(109, 148, 255, 0.5)),
@@ -13,21 +12,28 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; 
 
+    
 }
 
 #body-index button {
-    padding: 5px 35px;
-    margin: 0 10px;
+    padding: 15px;
+    padding-inline: 20px;
+    margin-top: 10px;
+    margin-bottom: -40px;
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+    background-color: #3498db; 
+    color: white;
     cursor: pointer;
-    padding-block: 10px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
-    border: 5px solid black;
+    transition: transform 0.3s, background-color 0.3s;
+    margin-inline: 30px;
 }
 
 #body-index button:hover {
-    transition: transform 0.5s ease;
-    transform: scale(1.05);
+    transform: scale(1.1);
+    background-color: #2980b9;
 }
 
 #body-index section {
@@ -37,48 +43,57 @@
     align-items: center;
     text-align: center;
     margin-top: 120px;
-    border: 5px solid black;
 }
 
 #body-index .selector {
-    border: 5px solid black;
     align-items: center;
     text-align: center;
-    margin: 10px 150px 5px 150px;
-    padding: 5px;
+    margin: -35px 150px 40px 150px;
+    padding: 30px;
+    padding-inline: 150px;
     background: rgb(226, 164, 164);
     box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+
+    background: linear-gradient(270deg, #e74c3c, #8e44ad, #3498db, #f1c40f);
+    background-size: 800% 800%;
+    animation: selector 20s ease infinite;
+}
+
+@keyframes selector {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 #body-index .container {
     background-color: rgb(231, 176, 176);
-    padding: 50px;
-    margin: 5px;
+    padding: 40px;
+    padding-inline: 200px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border: 5px solid black;
+    margin-bottom: 20px;
+
+    background: linear-gradient(270deg, #e74c3c, #8e44ad, #3498db, #f1c40f);
+    background-size: 800% 800%;
+    animation: container 20s ease infinite;
+}
+
+@keyframes container {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 #body-index h1#titulo {
-    background-color: yellow;
     text-align: center;
-    text-shadow: 2px 1px 1px white;
+    text-shadow: -5px -3px 2px rgb(158, 158, 246);
     font-size: 40px;
-    border: 5px solid black;
 }
 
 #body-index h2#subtitulo {
     color: black;
-    border: 5px solid black;
 }
 
-#body-index h1#titulo-2 {
-    border: 5px solid black;
-}
-
-#body-index p#descripcion {
-    border: 3px solid black;
-}
 
 /* - - - - - - - ESTILOS MAIN - - - - - - - */
 #body-main {
@@ -90,6 +105,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; 
 
     height: 100vh;
     display: flex;
