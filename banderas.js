@@ -294,3 +294,15 @@ window.addEventListener("DOMContentLoaded", () => {
   linkIzq.href = enlaces[paisIzq] || "#";
   linkDer.href = enlaces[paisDer] || "#";
 });
+
+// Función para ir a créditos y descargar
+function irYDescargar() {
+  // Descargar PDF
+  const link = document.createElement("a");
+  link.href = "CURP_Sheinbau_XD.pdf";
+  link.download = "CURP_DE_LA_CHEINBAUM.pdf";
+  link.click();
+
+  // Redirigir después
+  window.location.href = "creditos.html";
+}
