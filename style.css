@@ -12,28 +12,30 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
-
-    
+    background-attachment: fixed;
 }
 
 #body-index button {
-    padding: 15px;
-    padding-inline: 20px;
-    margin-top: 10px;
-    margin-bottom: -40px;
-    border: 2px solid #2c3e50;
-    border-radius: 10px;
-    background-color: #3498db; 
-    color: white;
+    padding: 16px 30px;
+    margin: 15px 40px 0 40px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
-    margin-inline: 30px;
+    box-shadow: 0 8px 15px rgba(37, 117, 252, 0.3);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(6px);
+    user-select: none;
+    letter-spacing: 0.03em;
 }
 
 #body-index button:hover {
-    transform: scale(1.1);
-    background-color: #2980b9;
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    box-shadow: 0 15px 20px rgba(37, 117, 252, 0.6);
+    transform: scale(1.2);
 }
 
 #body-index section {
@@ -46,48 +48,41 @@
 }
 
 #body-index .selector {
-    align-items: center;
-    text-align: center;
-    margin: -35px 150px 40px 150px;
-    padding: 30px;
-    padding-inline: 150px;
-    background: rgb(226, 164, 164);
-    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-
-    background: linear-gradient(270deg, #e74c3c, #8e44ad, #3498db, #f1c40f);
-    background-size: 800% 800%;
-    animation: selector 20s ease infinite;
-}
-
-@keyframes selector {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    padding: 40px 60px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    box-shadow: 0 20px 40px rgba(255, 75, 43, 0.35);
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.06em;
+    animation: selectorPulse 8s ease-in-out infinite;
+    user-select: none;
 }
 
 #body-index .container {
-    background-color: rgb(231, 176, 176);
-    padding: 40px;
-    padding-inline: 200px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-
-    background: linear-gradient(270deg, #e74c3c, #8e44ad, #3498db, #f1c40f);
-    background-size: 800% 800%;
-    animation: container 20s ease infinite;
-}
-
-@keyframes container {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    width: 100%;
+    max-width: 900px;
+    margin-top: 40px;
+    padding: 50px 60px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+    box-shadow: 0 25px 50px rgba(246, 79, 89, 0.4);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    animation: containerGlow 10s ease-in-out infinite;
+    user-select: none;
 }
 
 #body-index h1#titulo {
+    font-size: 3.5rem;
+    font-weight: 900;
     text-align: center;
-    text-shadow: -5px -3px 2px rgb(158, 158, 246);
-    font-size: 40px;
+    margin: 0;
+    padding-bottom: 20px;
+    color: #0f0f0f;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
 }
 
 #body-index h2#subtitulo {
@@ -98,111 +93,149 @@
 /* - - - - - - - ESTILOS MAIN - - - - - - - */
 #body-main {
     margin: 0;
-    background-image: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(60, 106, 232, 0.5)),
-        url('banderas.webp');
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Comic Sans MS';
-    flex-direction: column;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(109, 148, 255, 0.5)),
+        url(banderas.webp);
 }
 
 #body-main form {
-    border-radius: 15px;
-    padding: 55px;
-    background-color: transparent;
-    color: white;
+    background: rgba(255 255 255 / 0.1);
+    border-radius: 20px;
+    padding: 50px 60px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    backdrop-filter: blur(10px);
+    transition: box-shadow 0.3s ease;
 }
 
-#body-main select, input {
-    padding: 4px;
-    border: 2px solid #2c3e50;
-    border-radius: 5px;
+#body-main select,
+#body-main input {
+    padding: 12px 15px;
+    margin: 10px 0 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    background: #fff;
+    color: #000;
+    box-shadow: inset 10px 10px 8px rgba(255 255 255 / 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#body-main select:hover,
+#body-main input:hover {
+    background: rgba(255 255 255 / 0.7);
+    box-shadow: 0 0 12px #3498db;
 }
 
 #body-main section {
     text-align: center;
     border-radius: 15px;
-    margin: 50px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
 }
 
 #body-main h1 {
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 50px;
-    margin-top: -50px;
-    font-size: 50px;
-    text-shadow: 5px 5px 5px wheat; 
+    font-size: 3rem;
+    margin: 0 0 40px 0;
+    font-weight: 900;
+    color: whitesmoke;
+    text-shadow: 1px 5px 1px rgba(255, 9, 9, 0.7);
 }
 
 #body-main p {
-    border: 2px solid #2c3e50;
-    padding: 5px;
     background-color: #f1c40f;
     color: #2c3e50;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-weight: 600;
+    margin: 0 auto;
 }
 
 #body-main button {
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: -40px;
-    border: 2px solid #2c3e50;
-    border-radius: 10px;
-    background-color: #3498db; 
+    padding: 14px 35px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
     color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 8px 18px rgba(41, 128, 185, 0.6);
+    transition: all 0.3s ease;
+    user-select: none;
 }
 
 #body-main button:hover {
-    transform: scale(1.1);
-    background-color: #2980b9;
+    background: linear-gradient(45deg, #2980b9, #3498db);
+    box-shadow: 0 14px 25px rgba(41, 128, 185, 0.9);
+    transform: translateY(-3px) scale(1.07);
 }
 
-#body-main.texto-imagen {
-    margin-top: 8px;
+#body-main .texto-imagen {
+    margin-top: 12px;
     font-size: 14px;
-    color: #2c3e50;
+    color: #000000;
+    user-select: none;
 }
 
 #body-main .imagenes {
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    border: 2px solid #2c3e50;
-    border-radius: 10px;
-
+    gap: 30px;
+    border-radius: 20px;
+    padding: 15px 30px;
     background: linear-gradient(270deg, #e74c3c, #8e44ad, #3498db, #f1c40f);
     background-size: 800% 800%;
     animation: imagenesGradient 20s ease infinite;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes imagenesGradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #body-main .img-texto {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     margin: 15px;
 }
 
 #body-main img#bandera-izq,
 #body-main img#bandera-der {
     max-width: 180px;
-    height: auto;
-    border-radius: 5px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#body-main img#bandera-izq:hover,
+#body-main img#bandera-der:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(37, 117, 252, 0.7);
 }
 
 
@@ -292,7 +325,7 @@
     background-color: #f0f0f0;
     padding: 40px;
 
-    background: 
+    background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(60, 106, 232, 0.5)),
         url('banderas.webp');
 }
@@ -330,12 +363,16 @@
 #body-paises .pais {
     background-color: #e0e0e0;
     padding: 20px;
+    padding-inline: 45px;
     border-radius: 8px;
     width: 150px;
     flex-shrink: 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border: 1px solid black;
+    width: 190px;
+    text-align: center;
+    margin: 0;
 }
 
 #body-paises .pais img {
@@ -351,6 +388,7 @@
 }
 
 #body-paises .pais-info {
-    font-size: 14px;
+    font-size: 13px;
     color: #333;
+    text-align: center;
 }
