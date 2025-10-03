@@ -1,8 +1,10 @@
 /* - - - - - - - ESTILOS INDEX - - - - - - - */
 #body-index {
-    height: 95.8vh;
+    height: 98.9vh;
     justify-content: center;
     font-family: 'Comic Sans MS';
+    margin: 0;
+    border: 5px solid black;
 
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(109, 148, 255, 0.5)),
@@ -11,6 +13,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 #body-index button {
@@ -81,7 +84,14 @@
 #body-main {
     margin: 0;
     border: 5px solid black;
-    background-color: aqua;
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(109, 148, 255, 0.5)),
+        url('banderas.webp');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     height: 98.7vh;
     display: flex;
     justify-content: center;
