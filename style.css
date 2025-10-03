@@ -234,17 +234,6 @@ input {
     text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.7);
 }
 
-/* Animación que sube los créditos */
-@keyframes scrollUp {
-    0% {
-        bottom: -343%;
-    }
-
-    100% {
-        bottom: 100%;
-    }
-}
-
 #body-creditos .credits img {
     width: 200px;
     margin: 20px auto;
@@ -261,4 +250,15 @@ input {
     border: 5px solid white;
     margin-left: 350px;
     margin-right: 350px;
+}
+
+/* Animación que sube los créditos */
+@keyframes scrollUp {
+    0% {
+        bottom: -343%;
+    }
+
+    100% {
+        bottom: 100%;
+    }
 }
