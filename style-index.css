@@ -50,8 +50,8 @@
 #body-index .selector {
     padding: 40px 60px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
-    box-shadow: 0 20px 40px rgba(255, 75, 43, 0.35);
+    background: linear-gradient(135deg, #c02929, #7a2bc4, #3454d1);
+    box-shadow: 0 20px 40px rgba(122, 43, 196, 0.4);
     color: white;
     font-weight: 700;
     font-size: 1.3rem;
@@ -66,8 +66,8 @@
     margin-top: 10px;
     padding: 50px 60px;
     border-radius: 30px;
-    background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
-    box-shadow: 0 25px 50px rgba(246, 79, 89, 0.4);
+    background: linear-gradient(135deg, #b82222, #8430d8, #3c5ee0);
+    box-shadow: 0 25px 50px rgba(132, 48, 216, 0.4);
     color: #0f0f0f;
     font-weight: 600;
     letter-spacing: 0.04em;
