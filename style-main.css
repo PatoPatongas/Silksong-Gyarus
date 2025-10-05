@@ -7,9 +7,16 @@
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     background: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(109, 148, 255, 0.5)),
         url(banderas.webp);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    user-select: none;
 }
 
 #body-main form {
@@ -80,7 +87,6 @@
     cursor: pointer;
     box-shadow: 0 8px 18px rgba(41, 128, 185, 0.6);
     transition: all 0.3s ease;
-    user-select: none;
 }
 
 #body-main button:hover {
@@ -93,7 +99,6 @@
     margin-top: 12px;
     font-size: 14px;
     color: #000000;
-    user-select: none;
 }
 
 #body-main .imagenes {
