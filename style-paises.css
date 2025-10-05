@@ -1,33 +1,44 @@
 /* - - - - - - - BODY PAISES - - - - - - - */
 #body-paises {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 40px;
-
+    font-family: 'Comic Sans MS', sans-serif;
     background:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(60, 106, 232, 0.5)),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(60, 106, 232, 0.6)),
         url('banderas.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 40px;
+    color: #0f0f0f;
 }
 
+/* Ventana principal */
 #body-paises .ventana {
     width: 92.5vw;
     height: 50vh;
-    background-color: #ffffff;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    background: linear-gradient(135deg, #b82222, #8430d8, #3c5ee0);
+    border: none;
+    border-radius: 20px;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(132, 48, 216, 0.4);
     overflow: hidden;
     margin-top: 25px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.04em;
 }
 
+/* Título */
 #body-paises .titulo {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
+/* Scroll */
 #body-paises .scroll-diagonal-container {
     width: 100%;
     height: 330px;
@@ -40,35 +51,45 @@
     padding: 2px;
 }
 
+/* Tarjetas de país */
 #body-paises .pais {
-    background-color: #e0e0e0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     padding: 20px;
     padding-inline: 45px;
-    border-radius: 8px;
-    width: 150px;
+    border-radius: 15px;
     flex-shrink: 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: 1px solid black;
-    width: 190px;
-    text-align: center;
-    margin: 0;
+    box-shadow: 0 10px 20px rgba(37, 117, 252, 0.4);
+    border: none;
+    transition: all 0.35s ease-in-out;
 }
 
+#body-paises .pais:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(37, 117, 252, 0.7);
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* Imagen de bandera */
 #body-paises .pais img {
     width: 80px;
     height: 50px;
     object-fit: cover;
     margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Nombre e info */
 #body-paises .pais-nombre {
     font-weight: bold;
     margin-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
 
 #body-paises .pais-info {
     font-size: 13px;
-    color: #333;
+    color: #f0f0f0;
     text-align: center;
 }
