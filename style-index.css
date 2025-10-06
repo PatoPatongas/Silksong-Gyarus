@@ -79,7 +79,27 @@
     border-radius: 20px;
 }
 
-/* SELECTOR */
+#body-index button {
+    font-weight: 600;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    letter-spacing: 0.03em;
+    color: black;
+    cursor: pointer;
+
+    padding: 12px 25px;
+    margin: 15px 15px 0 15px;
+    border-radius: 40px;
+    border: 4px solid black;
+    background: red;
+
+    /* .3 segundos de transicion de rojo a rojo oscuro */
+    transition: background 0.3s ease;
+}
+
+#body-index button:hover {
+    background: darkred;
+}
+
 #body-index .selector {
     font-weight: 700;
     font-size: clamp(1rem, 3vw, 1.3rem);
@@ -112,26 +132,6 @@
     border: 4px solid #000;
 }
 
-#body-index button {
-    font-weight: 600;
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-    letter-spacing: 0.03em;
-    color: black;
-    cursor: pointer;
-
-    padding: 12px 25px;
-    margin: 15px 15px 0 15px;
-    border-radius: 40px;
-    border: 4px solid black;
-    background: red;
-
-    /* .3 segundos de transicion de rojo a rojo oscuro */
-    transition: background 0.3s ease;
-}
-
-#body-index button:hover {
-    background: darkred;
-}
 
 @media (max-width: 600px) {
     /* Baja el padding si la pantalla es pequeña */
