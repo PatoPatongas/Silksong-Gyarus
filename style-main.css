@@ -1,4 +1,4 @@
-/* - - - - - - - ESTILOS MAIN - - - - - - - */
+/* - - - - - - - ESTILOS MAIN (diseño visual de créditos) - - - - - - - */
 #body-main {
     margin: 0;
     height: 100vh;
@@ -9,7 +9,7 @@
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     background: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(109, 148, 255, 0.5)),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(40, 40, 40, 0.9)),
         url(banderas.webp);
 
     background-size: cover;
@@ -17,36 +17,54 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     user-select: none;
+
+    color: #f0e68c; /* color créditos */
+    text-shadow: 0 0 8px rgba(255, 255, 200, 0.5); /* sombra créditos */
 }
 
 #body-main form {
-    background: rgba(255 255 255 / 0.1);
+    background: rgba(0 0 0 / 0.8); /* fondo créditos */
     border-radius: 20px;
     padding: 50px 60px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-    color: #f0f0f0;
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15); /* sombra créditos */
+    color: #fff; /* texto créditos */
     backdrop-filter: blur(10px);
     transition: box-shadow 0.3s ease;
 }
 
-#body-main select,
-#body-main input {
+#body-main select {
     padding: 5px 5px;
     margin: 10px 0 20px;
     border: none;
     border-radius: 12px;
     font-size: 1rem;
     outline: none;
-    background: #fff;
-    color: #000;
-    box-shadow: inset 10px 10px 8px rgba(255 255 255 / 0.1);
+    background: #444; /* fondo créditos */
+    color: #000000; /* texto créditos */
+    box-shadow: inset 10px 10px 8px rgba(255, 255, 255, 0.1); /* sombra créditos */
+    transition: background-color 0.3s ease;
+    width: 150px; 
+}
+
+#body-main input {
+    padding: 5px 8px; /* altura mínima para que se vea bien */
+    font-size: 1rem;
+    width: 80px; /* muy pequeño en línea */
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: #444;
+    color: #000000;
+    box-shadow: inset 5px 5px 4px rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease;
 }
 
+
+
 #body-main select:hover,
 #body-main input:hover {
-    background: rgba(255 255 255 / 0.7);
-    box-shadow: 0 0 12px #3498db;
+    background: rgba(255 255 255 / 0.7); /* hover créditos */
+    box-shadow: 0 0 12px #f0e68c; /* sombra hover créditos */
 }
 
 #body-main section {
@@ -54,21 +72,21 @@
     border-radius: 15px;
     margin: 20px 50px ;
     padding: 20px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
+    background: linear-gradient(45deg, #444, #777); /* gradiente créditos */
+    color: #fff; /* texto créditos */
 }
 
 #body-main h1 {
     font-size: 3rem;
     margin: 0 0 40px 0;
     font-weight: 900;
-    color: whitesmoke;
-    text-shadow: 1px 5px 1px rgba(255, 9, 9, 0.7);
+    color: #fff; /* texto créditos */
+    text-shadow: 0 0 10px rgba(255, 255, 200, 0.7); /* sombra créditos */
 }
 
 #body-main p {
-    background-color: #f1c40f;
-    color: #2c3e50;
+    background-color: rgba(255, 255, 0, 0.3); /* color créditos */
+    color: #fff; /* texto créditos */
     border-radius: 10px;
     padding: 12px 20px;
     font-weight: 600;
@@ -80,25 +98,25 @@
     margin-top: 15px;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(45deg, #3498db, #2980b9);
-    color: white;
+    background: linear-gradient(45deg, #444, #777); /* gradiente créditos */
+    color: #fff; /* texto créditos */
     font-weight: 700;
     font-size: 1.1rem;
     cursor: pointer;
-    box-shadow: 0 8px 18px rgba(41, 128, 185, 0.6);
+    box-shadow: 0 8px 18px rgba(255, 255, 255, 0.1); /* sombra créditos */
     transition: all 0.3s ease;
 }
 
 #body-main button:hover {
-    background: linear-gradient(45deg, #2980b9, #3498db);
-    box-shadow: 0 14px 25px rgba(41, 128, 185, 0.9);
+    background: linear-gradient(45deg, #777, #444); /* hover créditos */
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2); /* sombra hover créditos */
     transform: translateY(-3px) scale(1.07);
 }
 
 #body-main .texto-imagen {
     margin-top: 12px;
     font-size: 14px;
-    color: #000000;
+    color: #f0e68c; /* texto créditos */
 }
 
 #body-main .imagenes {
@@ -108,24 +126,10 @@
     gap: 30px;
     border-radius: 20px;
     padding: 15px 30px;
-    background: linear-gradient(270deg, #e74c3c, #8e44ad, #3498db, #f1c40f);
+    background: linear-gradient(270deg, #444, #777, #444, #777); /* gradiente créditos */
     background-size: 800% 800%;
     animation: imagenesGradient 20s ease infinite;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-}
-
-@keyframes imagenesGradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1); /* sombra créditos */
 }
 
 #body-main .img-texto {
@@ -140,7 +144,7 @@
 #body-main img#bandera-der {
     max-width: 180px;
     border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(255, 255, 200, 0.2); /* sombra créditos */
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -148,5 +152,5 @@
 #body-main img#bandera-izq:hover,
 #body-main img#bandera-der:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(37, 117, 252, 0.7);
+    box-shadow: 0 0 20px rgba(255, 255, 200, 0.5); /* sombra hover créditos */
 }
