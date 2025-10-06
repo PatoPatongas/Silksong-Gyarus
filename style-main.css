@@ -98,8 +98,8 @@
     margin-top: 15px;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(45deg, #444, #777); /* gradiente créditos */
-    color: #fff; /* texto créditos */
+    background: linear-gradient(45deg, #2e0585, #140023);
+    color: #fff; 
     font-weight: 700;
     font-size: 1.1rem;
     cursor: pointer;
@@ -108,8 +108,8 @@
 }
 
 #body-main button:hover {
-    background: linear-gradient(45deg, #777, #444); /* hover créditos */
-    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2); /* sombra hover créditos */
+    background: linear-gradient(45deg, #2e0585, #140023);
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2);
     transform: translateY(-3px) scale(1.07);
 }
 
