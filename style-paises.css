@@ -15,9 +15,9 @@
 }
 
 /* Ventana principal */
-#body-paises .ventana {
-    width: 92.5vw;
-    height: 55vh;
+#body-paises .ventana { 
+    max-width: 100vw;
+    max-height: 100vh;
     background: rgba(0, 0, 0, 0.8); /* degradado de créditos */
     border: 3px solid #ccc;
     border-radius: 20px;
