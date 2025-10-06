@@ -24,7 +24,7 @@
     margin: 15px 40px 0 40px;
     border: none;
     border-radius: 40px;
-    background: linear-gradient(45deg, #444, #777); /* gradiente créditos */
+    background: linear-gradient(45deg, #2e0585, #140023); /* gradiente créditos */
     color: #fff; /* texto créditos */
     font-weight: 600;
     font-size: 1rem;
@@ -36,8 +36,8 @@
 }
 
 #body-index button:hover {
-    background: linear-gradient(45deg, #777, #444); /* gradiente hover créditos */
-    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2); /* sombra hover créditos */
+    background: linear-gradient(45deg, #2e0585, #140023); /* gradiente hover créditos */
+    box-shadow: 0 12px 20px rgba(62, 62, 62, 0.2); /* sombra hover créditos */
     transform: scale(1.2);
 }
 
@@ -53,7 +53,7 @@
 #body-index .selector {
     padding: 40px 60px;
     border-radius: 20px;
-    background: linear-gradient(45deg, #444, #777); /* gradiente créditos */
+    background: rgba(25, 25, 25, 0.8);
     box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1); /* sombra créditos */
     color: #fff; /* texto créditos */
     font-weight: 700;
@@ -70,7 +70,7 @@
     margin-top: 10px;
     padding: 50px 60px;
     border-radius: 30px;
-    background: rgba(0, 0, 0, 0.8); /* fondo créditos */
+    background: rgba(25, 25, 25, 0.8);
     box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15); /* sombra créditos */
     color: #fff; /* texto créditos */
     font-weight: 600;
@@ -90,5 +90,5 @@
 }
 
 #body-index h2#subtitulo {
-    color: #f0e68c; /* color créditos */
+    color: #fff; /* color créditos */
 }
