@@ -1,67 +1,58 @@
-/* - - - - - - - ESTILOS INDEX (diseño visual de créditos) - - - - - - - */
+/* - - - - - - - ESTILOS INDEX (wireframe) - - - - - - - */
 #body-index {
     height: 96vh;
     justify-content: center;
-    font-family: 'Comic Sans MS';
+    font-family: sans-serif;
     margin: 0;
     user-select: none;
 
-    background-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(40, 40, 40, 0.9)),
-        url('banderas.webp');
+    background: pink;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    color: #f0e68c; /* color créditos */
-    text-shadow: 0 0 8px rgba(255, 255, 200, 0.5); /* sombra créditos */
+    color: black;
 }
 
 #body-index button {
     padding: 16px 30px;
     margin: 15px 40px 0 40px;
-    border: none;
+    border: 1px solid #000;
     border-radius: 40px;
-    background: linear-gradient(45deg, #2e0585, #140023); /* gradiente créditos */
-    color: #fff; /* texto créditos */
+    background: red;
+    color: black;
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
-    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1); /* sombra créditos */
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(6px);
     letter-spacing: 0.03em;
+    border: 5px solid black;
 }
 
 #body-index button:hover {
-    background: linear-gradient(45deg, #2e0585, #140023); /* gradiente hover créditos */
-    box-shadow: 0 12px 20px rgba(62, 62, 62, 0.2); /* sombra hover créditos */
-    transform: scale(1.2);
+    background: darkred;
+    border: 5px solid black;
 }
 
 #body-index section {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 51px;
+    background-color: skyblue;
+    border: 5px solid black;
 }
 
 #body-index .selector {
     padding: 40px 60px;
     border-radius: 20px;
-    background: rgba(25, 25, 25, 0.8);
-    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1); /* sombra créditos */
-    color: #fff; /* texto créditos */
+    background: blue;
+    box-shadow: none;
+    color: black;
     font-weight: 700;
     font-size: 1.3rem;
     letter-spacing: 0.06em;
-    animation: selectorPulse 8s ease-in-out infinite;
     margin-bottom: 31px;
     margin-top: -30px;
+    border: 5px solid black;
 }
 
 #body-index .container {
@@ -70,25 +61,32 @@
     margin-top: 10px;
     padding: 50px 60px;
     border-radius: 30px;
-    background: rgba(25, 25, 25, 0.8);
-    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15); /* sombra créditos */
-    color: #fff; /* texto créditos */
+    background: blue;
+    border: 5px solid #000;
+    color: black;
     font-weight: 600;
     letter-spacing: 0.04em;
-    animation: containerGlow 10s ease-in-out infinite;
     margin-bottom: 30px;
 }
 
-#body-index h1#titulo {
+#body-index h1 {
     font-size: 3.5rem;
     font-weight: 900;
     text-align: center;
     margin: 0;
     padding-bottom: 20px;
-    color: #fff; /* texto créditos */
-    text-shadow: 0 0 10px rgba(255, 255, 200, 0.7); /* sombra créditos */
+    color: black;
+    background-color: blueviolet;
+    border: 5px solid #000;
 }
 
-#body-index h2#subtitulo {
-    color: #fff; /* color créditos */
+#body-index h2 {
+    color: black;
+    background-color: blueviolet;
+    border: 5px solid #000;
+}
+
+#body-index p {
+    background-color: blueviolet;
+    border: 5px solid #000;
 }
