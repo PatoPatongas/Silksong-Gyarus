@@ -1,0 +1,109 @@
+/* - - - - - - - BODY PAISES (diseño visual de créditos) - - - - - - - */
+#body-paises {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(40, 40, 40, 0.9)),
+        url('banderas.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 40px;
+    color: #f0e68c; /* color de créditos */
+    text-shadow: 0 0 8px rgba(255, 255, 200, 0.5);
+}
+
+/* Ventana principal */
+#body-paises .ventana {
+    width: 92.5vw;
+    height: 55vh;
+    background: rgba(0, 0, 0, 0.8); /* degradado de créditos */
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15); /* sombra de créditos */
+    overflow: hidden;
+    margin-top: 25px;
+    color: #fff; /* texto de créditos */
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+/* Título */
+#body-paises .titulo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 200, 0.7); /* sombra de créditos */
+}
+
+/* Scroll */
+#body-paises .scroll-diagonal-container {
+    width: 100%;
+    height: 370px;
+    overflow: auto;
+}
+
+#body-paises .scroll-diagonal-content {
+    display: flex;
+    gap: 15px;
+    padding: 2px;
+}
+
+/* Tarjetas de país */
+#body-paises .pais {
+    background: linear-gradient(45deg, #444, #777); /* gradiente de créditos */
+    padding: 20px;
+    padding-inline: 45px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1); /* sombra de créditos */
+    border: none;
+    transition: all 0.35s ease-in-out;
+    margin-left: 40px;
+    color: #fff; /* texto de créditos */
+    font-weight: 600;
+}
+
+#body-paises .pais:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2); /* sombra hover créditos */
+    background: linear-gradient(45deg, #777, #444); /* gradiente hover créditos */
+}
+
+#body-paises .presidente-img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 200, 0.2); /* sombra de créditos */
+    border-radius: 12px; /* estilo créditos */
+}
+
+/* Imagen de bandera */
+#body-paises .pais img {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 12px; /* estilo créditos */
+    box-shadow: 0 0 15px rgba(255, 255, 200, 0.2); /* sombra créditos */
+}
+
+/* Nombre e info */
+#body-paises .pais-nombre {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 0 6px rgba(255, 255, 200, 0.5); /* sombra créditos */
+}
+
+#body-paises .pais-info {
+    font-size: 13px;
+    color: #f0e68c; /* color créditos */
+    text-align: center;
+}

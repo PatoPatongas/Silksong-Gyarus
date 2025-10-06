@@ -1,7 +1,7 @@
 const ratesToUSD = {
   // - - - AMERICA - - - //
   MXN: 18.0,
-  ARS: 140.0,
+  ARS: 1424.5,
   USD: 1.0,
   BSD: 1.0,
   BBD: 2.0,

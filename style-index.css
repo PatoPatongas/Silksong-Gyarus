@@ -1,0 +1,94 @@
+/* - - - - - - - ESTILOS INDEX (diseño visual de créditos) - - - - - - - */
+#body-index {
+    height: 96vh;
+    justify-content: center;
+    font-family: 'Comic Sans MS';
+    margin: 0;
+    user-select: none;
+
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(40, 40, 40, 0.9)),
+        url('banderas.webp');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #f0e68c; /* color créditos */
+    text-shadow: 0 0 8px rgba(255, 255, 200, 0.5); /* sombra créditos */
+}
+
+#body-index button {
+    padding: 16px 30px;
+    margin: 15px 40px 0 40px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #2e0585, #140023); /* gradiente créditos */
+    color: #fff; /* texto créditos */
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1); /* sombra créditos */
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(6px);
+    letter-spacing: 0.03em;
+}
+
+#body-index button:hover {
+    background: linear-gradient(45deg, #2e0585, #140023); /* gradiente hover créditos */
+    box-shadow: 0 12px 20px rgba(62, 62, 62, 0.2); /* sombra hover créditos */
+    transform: scale(1.2);
+}
+
+#body-index section {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 51px;
+}
+
+#body-index .selector {
+    padding: 40px 60px;
+    border-radius: 20px;
+    background: rgba(25, 25, 25, 0.8);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1); /* sombra créditos */
+    color: #fff; /* texto créditos */
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.06em;
+    animation: selectorPulse 8s ease-in-out infinite;
+    margin-bottom: 31px;
+    margin-top: -30px;
+}
+
+#body-index .container {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 10px;
+    padding: 50px 60px;
+    border-radius: 30px;
+    background: rgba(25, 25, 25, 0.8);
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15); /* sombra créditos */
+    color: #fff; /* texto créditos */
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    animation: containerGlow 10s ease-in-out infinite;
+    margin-bottom: 30px;
+}
+
+#body-index h1#titulo {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+    color: #fff; /* texto créditos */
+    text-shadow: 0 0 10px rgba(255, 255, 200, 0.7); /* sombra créditos */
+}
+
+#body-index h2#subtitulo {
+    color: #fff; /* color créditos */
+}

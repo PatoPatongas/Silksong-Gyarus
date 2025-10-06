@@ -1,0 +1,156 @@
+/* - - - - - - - ESTILOS MAIN (diseño visual de créditos) - - - - - - - */
+#body-main {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(40, 40, 40, 0.9)),
+        url(banderas.webp);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    user-select: none;
+
+    color: #f0e68c; /* color créditos */
+    text-shadow: 0 0 8px rgba(255, 255, 200, 0.5); /* sombra créditos */
+}
+
+#body-main form {
+    background: rgba(0 0 0 / 0.8); /* fondo créditos */
+    border-radius: 20px;
+    padding: 50px 60px;
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15); /* sombra créditos */
+    color: #fff; /* texto créditos */
+    backdrop-filter: blur(10px);
+    transition: box-shadow 0.3s ease;
+}
+
+#body-main select {
+    padding: 5px 5px;
+    margin: 10px 0 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    background: #444; /* fondo créditos */
+    color: #000000; /* texto créditos */
+    box-shadow: inset 10px 10px 8px rgba(255, 255, 255, 0.1); /* sombra créditos */
+    transition: background-color 0.3s ease;
+    width: 150px; 
+}
+
+#body-main input {
+    padding: 5px 8px; /* altura mínima para que se vea bien */
+    font-size: 1rem;
+    width: 80px; /* muy pequeño en línea */
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: #444;
+    color: #000000;
+    box-shadow: inset 5px 5px 4px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+
+
+#body-main select:hover,
+#body-main input:hover {
+    background: rgba(255 255 255 / 0.7); /* hover créditos */
+    box-shadow: 0 0 12px #f0e68c; /* sombra hover créditos */
+}
+
+#body-main section {
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px 50px ;
+    padding: 20px;
+    background: linear-gradient(45deg, #444, #777); /* gradiente créditos */
+    color: #fff; /* texto créditos */
+}
+
+#body-main h1 {
+    font-size: 3rem;
+    margin: 0 0 40px 0;
+    font-weight: 900;
+    color: #fff; /* texto créditos */
+    text-shadow: 0 0 10px rgba(255, 255, 200, 0.7); /* sombra créditos */
+}
+
+#body-main p {
+    background-color: rgba(255, 255, 0, 0.3); /* color créditos */
+    color: #fff; /* texto créditos */
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+#body-main button {
+    padding: 14px 35px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #2e0585, #140023);
+    color: #fff; 
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(255, 255, 255, 0.1); /* sombra créditos */
+    transition: all 0.3s ease;
+}
+
+#body-main button:hover {
+    background: linear-gradient(45deg, #2e0585, #140023);
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px) scale(1.07);
+}
+
+#body-main .texto-imagen {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #f0e68c; /* texto créditos */
+}
+
+#body-main .imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 20px;
+    padding: 15px 30px;
+    background: linear-gradient(270deg, #444, #777, #444, #777); /* gradiente créditos */
+    background-size: 800% 800%;
+    animation: imagenesGradient 20s ease infinite;
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1); /* sombra créditos */
+}
+
+#body-main .img-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 15px;
+}
+
+#body-main img#bandera-izq,
+#body-main img#bandera-der {
+    max-width: 180px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 200, 0.2); /* sombra créditos */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#body-main img#bandera-izq:hover,
+#body-main img#bandera-der:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 200, 0.5); /* sombra hover créditos */
+}

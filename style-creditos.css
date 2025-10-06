@@ -1,0 +1,117 @@
+/* - - - - - - - ESTILO CRÉDITOS (RESPONSIVO Y ELEGANTE) - - - - - - - */
+#body-creditos {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(40, 40, 40, 0.9)),
+        url('banderas.webp');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Botón */
+#body-creditos button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #2e0585, #140023);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+#body-creditos button:hover {
+    background: linear-gradient(45deg, #2e0585, #140023);
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Contenedor principal adaptable */
+#body-creditos .creditos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Marco principal que contiene todo */
+#body-creditos .container {
+    position: relative;
+    width: 90vw;       /* siempre ocupa el 90% del ancho de la ventana */
+    height: 80vh;      /* siempre ocupa el 80% del alto de la ventana */
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* Créditos con desplazamiento */
+#body-creditos .credits {
+    position: absolute;
+    bottom: -70%;
+    width: 100%;
+    color: #f0e68c;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: clamp(20px, 4vw, 54px); /* tamaño fluido según pantalla */
+    text-align: center;
+    animation: scrollUp 30s linear infinite;
+    text-shadow: 0 0 8px rgba(255, 255, 200, 0.5);
+    box-sizing: border-box;
+}
+
+/* Espaciado entre secciones */
+#body-creditos .credits div {
+    margin: 20px 0;
+}
+
+/* Imagen dentro de los créditos */
+#body-creditos .credits img {
+    width: clamp(100px, 15vw, 200px);
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 200, 0.2);
+}
+
+/* Bordes internos decorativos */
+#body-creditos div.border-wf {
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 2px solid #bbb;
+    border-radius: 10px;
+}
+
+#body-creditos div.border-logo {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* Animación */
+@keyframes scrollUp {
+    0% {
+        bottom: -413%;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
